@@ -2,80 +2,86 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Form pendaftaran akun">
     <title>Form Pendaftaran Akun</title>
 </head>
 <body>
-
-    <p>
-        <a href="imdb.html">IMDb Top 3 Movies</a> |
-        <a href="blog.html">Blog</a> |
-        <a href="form.html">Form Pendaftaran Akun</a> |
-        <a href="cv.html">Curiculum Vitae</a> |
-    </p>
+    <nav aria-label="Navigasi utama">
+        <a href="index.html">IMDb Top 3 Movies</a>&nbsp;|&nbsp;
+        <a href="blog.html">Dev Blogs</a>&nbsp;|&nbsp;
+        <a href="form.html">Form Pendaftaran Akun</a>&nbsp;|&nbsp;
+        <a href="cv.html">Curriculum Vitae</a>
+    </nav>
 
     <hr>
 
-    <form>
+    <form action="#" method="post">
         <fieldset>
             <legend>Daftar Akun</legend>
 
             <p>
-                <label>Nama Lengkap:</label><br>
-                <input type="text" name="nama">
+                <label for="nama">Nama Lengkap:</label><br>
+                <input type="text" id="nama" name="nama" required>
             </p>
 
             <p>
-                <label>Jenis Kelamin:</label><br>
-                <input type="radio" name="jk" value="L"> Laki-laki
-                <input type="radio" name="jk" value="P"> Perempuan
+                <span>Jenis Kelamin:</span><br>
+                <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki" required>
+                <label for="laki-laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                <label for="perempuan">Perempuan</label>
             </p>
 
             <p>
-                <label>Tempat Lahir:</label><br>
-                <input type="text" name="tempat">
+                <label for="tempat-lahir">Tempat Lahir:</label><br>
+                <input type="text" id="tempat-lahir" name="tempat_lahir" required>
             </p>
 
             <p>
-                <label>Tanggal Lahir:</label><br>
-                <input type="date" name="tanggal">
+                <label for="tanggal-lahir">Tanggal Lahir:</label><br>
+                <input type="date" id="tanggal-lahir" name="tanggal_lahir" required>
             </p>
 
             <p>
-                <label>Agama:</label><br>
-                <select name="agama">
-                    <option>Islam</option>
-                    <option>Katolik</option>
-                    <option>Protestan</option>
-                    <option>Hindu</option>
-                    <option>Buddha</option>
-                    <option>Konghucu</option>
+                <label for="agama">Agama:</label><br>
+                <select id="agama" name="agama" required>
+                    <option value="Islam">Islam</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Protestan">Protestan</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Konghucu">Konghucu</option>
                 </select>
             </p>
 
             <p>
-                <label>Hobi:</label><br>
-                <input type="checkbox" name="hobi" value="membaca"> Membaca
-                <input type="checkbox" name="hobi" value="olahraga"> Olahraga
-                <input type="checkbox" name="hobi" value="musik"> Musik
-                <input type="checkbox" name="hobi" value="traveling"> Traveling
+                <span>Hobi:</span><br>
+                <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
+                <label for="membaca">Membaca</label>
+                <input type="checkbox" id="olahraga" name="hobi[]" value="Olahraga">
+                <label for="olahraga">Olahraga</label>
+                <input type="checkbox" id="musik" name="hobi[]" value="Musik">
+                <label for="musik">Musik</label>
+                <input type="checkbox" id="traveling" name="hobi[]" value="Traveling">
+                <label for="traveling">Traveling</label>
             </p>
 
             <p>
-                <label>Password:</label><br>
-                <input type="password" name="password">
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" minlength="8" required>
             </p>
 
             <p>
-                <input type="checkbox" name="setuju"> Saya menyetujui syarat dan ketentuan
+                <input type="checkbox" id="persetujuan" name="persetujuan" value="setuju" required>
+                <label for="persetujuan">Saya menyetujui syarat dan ketentuan</label>
             </p>
 
             <p>
                 <input type="reset" value="Reset">
                 <input type="submit" value="Submit">
             </p>
-
         </fieldset>
     </form>
-
 </body>
 </html>
