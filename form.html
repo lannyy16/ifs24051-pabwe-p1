@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pendaftaran Akun</title>
+</head>
+<body>
+
+    <p>
+        <a href="imdb.html">IMDb Top 3 Movies</a> |
+        <a href="blog.html">Blog</a> |
+        <a href="form.html">Form Pendaftaran Akun</a> |
+        <a href="cv.html">Curiculum Vitae</a> |
+    </p>
+
+    <hr>
+
+    <form>
+        <fieldset>
+            <legend>Daftar Akun</legend>
+
+            <p>
+                <label>Nama Lengkap:</label><br>
+                <input type="text" name="nama">
+            </p>
+
+            <p>
+                <label>Jenis Kelamin:</label><br>
+                <input type="radio" name="jk" value="L"> Laki-laki
+                <input type="radio" name="jk" value="P"> Perempuan
+            </p>
+
+            <p>
+                <label>Tempat Lahir:</label><br>
+                <input type="text" name="tempat">
+            </p>
+
+            <p>
+                <label>Tanggal Lahir:</label><br>
+                <input type="date" name="tanggal">
+            </p>
+
+            <p>
+                <label>Agama:</label><br>
+                <select name="agama">
+                    <option>Islam</option>
+                    <option>Katolik</option>
+                    <option>Protestan</option>
+                    <option>Hindu</option>
+                    <option>Buddha</option>
+                    <option>Konghucu</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Hobi:</label><br>
+                <input type="checkbox" name="hobi" value="membaca"> Membaca
+                <input type="checkbox" name="hobi" value="olahraga"> Olahraga
+                <input type="checkbox" name="hobi" value="musik"> Musik
+                <input type="checkbox" name="hobi" value="traveling"> Traveling
+            </p>
+
+            <p>
+                <label>Password:</label><br>
+                <input type="password" name="password">
+            </p>
+
+            <p>
+                <input type="checkbox" name="setuju"> Saya menyetujui syarat dan ketentuan
+            </p>
+
+            <p>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </p>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
