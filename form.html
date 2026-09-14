@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,77 +17,81 @@
 
     <hr>
 
-    <form action="#" method="post">
-        <fieldset>
-            <legend>Daftar Akun</legend>
+    <main>
+        <h1>Daftar Akun</h1>
 
-            <p>
-                <label for="nama">Nama Lengkap:</label><br>
-                <input type="text" id="nama" name="nama" required>
-            </p>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Daftar Akun</legend>
 
-            <p>
-                <span>Jenis Kelamin:</span><br>
-                <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki" required>
-                <label for="laki-laki">Laki-laki</label>
+                <p>
+                    <label for="nama">Nama Lengkap:</label><br>
+                    <input type="text" id="nama" name="nama" required>
+                </p>
 
-                <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
-                <label for="perempuan">Perempuan</label>
-            </p>
+                <p>
+                    <span>Jenis Kelamin:</span><br>
+                    <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki" required>
+                    <label for="laki-laki">Laki-laki</label>
 
-            <p>
-                <label for="tempat-lahir">Tempat Lahir:</label><br>
-                <input type="text" id="tempat-lahir" name="tempat_lahir" required>
-            </p>
+                    <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                    <label for="perempuan">Perempuan</label>
+                </p>
 
-            <p>
-                <label for="tanggal-lahir">Tanggal Lahir:</label><br>
-                <input type="date" id="tanggal-lahir" name="tanggal_lahir" required>
-            </p>
+                <p>
+                    <label for="tempat-lahir">Tempat Lahir:</label><br>
+                    <input type="text" id="tempat-lahir" name="tempat_lahir" required>
+                </p>
 
-            <p>
-                <label for="agama">Agama:</label><br>
-                <select id="agama" name="agama" required>
-                    <option value="">Pilih agama</option>
-                    <option value="Islam">Islam</option>
-                    <option value="Katolik">Katolik</option>
-                    <option value="Protestan">Protestan</option>
-                    <option value="Hindu">Hindu</option>
-                    <option value="Buddha">Buddha</option>
-                    <option value="Konghucu">Konghucu</option>
-                </select>
-            </p>
+                <p>
+                    <label for="tanggal-lahir">Tanggal Lahir:</label><br>
+                    <input type="date" id="tanggal-lahir" name="tanggal_lahir" required>
+                </p>
 
-            <p>
-                <span>Hobi:</span><br>
-                <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
-                <label for="membaca">Membaca</label>
+                <p>
+                    <label for="agama">Agama:</label><br>
+                    <select id="agama" name="agama" required>
+                        <option value="">Pilih agama</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Protestan">Protestan</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Buddha">Buddha</option>
+                        <option value="Konghucu">Konghucu</option>
+                    </select>
+                </p>
 
-                <input type="checkbox" id="olahraga" name="hobi[]" value="Olahraga">
-                <label for="olahraga">Olahraga</label>
+                <p>
+                    <span>Hobi:</span><br>
+                    <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
+                    <label for="membaca">Membaca</label>
 
-                <input type="checkbox" id="musik" name="hobi[]" value="Musik">
-                <label for="musik">Musik</label>
+                    <input type="checkbox" id="olahraga" name="hobi[]" value="Olahraga">
+                    <label for="olahraga">Olahraga</label>
 
-                <input type="checkbox" id="traveling" name="hobi[]" value="Traveling">
-                <label for="traveling">Traveling</label>
-            </p>
+                    <input type="checkbox" id="musik" name="hobi[]" value="Musik">
+                    <label for="musik">Musik</label>
 
-            <p>
-                <label for="password">Password:</label><br>
-                <input type="password" id="password" name="password" minlength="8" required>
-            </p>
+                    <input type="checkbox" id="traveling" name="hobi[]" value="Traveling">
+                    <label for="traveling">Traveling</label>
+                </p>
 
-            <p>
-                <input type="checkbox" id="persetujuan" name="persetujuan" value="setuju" required>
-                <label for="persetujuan">Saya menyetujui syarat dan ketentuan</label>
-            </p>
+                <p>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" minlength="8" required>
+                </p>
 
-            <p>
-                <input type="reset" value="Reset">
-                <input type="submit" value="Submit">
-            </p>
-        </fieldset>
-    </form>
+                <p>
+                    <input type="checkbox" id="persetujuan" name="persetujuan" value="setuju" required>
+                    <label for="persetujuan">Saya menyetujui syarat dan ketentuan</label>
+                </p>
+
+                <p>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </p>
+            </fieldset>
+        </form>
+    </main>
 </body>
 </html>
