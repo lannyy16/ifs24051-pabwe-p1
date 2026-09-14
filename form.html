@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Form pendaftaran akun">
+    <meta name="author" content="ifs24051">
     <title>Form Pendaftaran Akun</title>
 </head>
 <body>
     <nav aria-label="Navigasi utama">
-        <a href="index.html">IMDb Top 3 Movies</a>&nbsp;|&nbsp;
-        <a href="blog.html">Dev Blogs</a>&nbsp;|&nbsp;
-        <a href="form.html">Form Pendaftaran Akun</a>&nbsp;|&nbsp;
+        <a href="index.html">IMDb Top 3 Movies</a> |
+        <a href="blog.html">Dev Blogs</a> |
+        <a href="form.html">Form Pendaftaran Akun</a> |
         <a href="cv.html">Curriculum Vitae</a>
     </nav>
 
@@ -29,6 +30,7 @@
                 <span>Jenis Kelamin:</span><br>
                 <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki" required>
                 <label for="laki-laki">Laki-laki</label>
+
                 <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
                 <label for="perempuan">Perempuan</label>
             </p>
@@ -46,6 +48,7 @@
             <p>
                 <label for="agama">Agama:</label><br>
                 <select id="agama" name="agama" required>
+                    <option value="">Pilih agama</option>
                     <option value="Islam">Islam</option>
                     <option value="Katolik">Katolik</option>
                     <option value="Protestan">Protestan</option>
@@ -59,10 +62,13 @@
                 <span>Hobi:</span><br>
                 <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
                 <label for="membaca">Membaca</label>
+
                 <input type="checkbox" id="olahraga" name="hobi[]" value="Olahraga">
                 <label for="olahraga">Olahraga</label>
+
                 <input type="checkbox" id="musik" name="hobi[]" value="Musik">
                 <label for="musik">Musik</label>
+
                 <input type="checkbox" id="traveling" name="hobi[]" value="Traveling">
                 <label for="traveling">Traveling</label>
             </p>

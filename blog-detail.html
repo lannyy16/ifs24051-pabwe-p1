@@ -1,32 +1,34 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Detail blog tentang deployment web application menggunakan Docker dan NGINX">
+    <meta name="author" content="ifs24051">
     <title>Blog Detail - Docker and NGINX</title>
 </head>
 <body>
     <nav aria-label="Navigasi utama">
-        <a href="index.html">IMDb Top 3 Movies</a>&nbsp;|&nbsp;
-        <a href="blog.html">Dev Blogs</a>&nbsp;|&nbsp;
-        <a href="form.html">Form Pendaftaran Akun</a>&nbsp;|&nbsp;
+        <a href="index.html">IMDb Top 3 Movies</a> |
+        <a href="blog.html">Dev Blogs</a> |
+        <a href="form.html">Form Pendaftaran Akun</a> |
         <a href="cv.html">Curriculum Vitae</a>
     </nav>
 
     <hr>
 
+    <!-- The blog cover uses the full available width as required. -->
     <img src="images/Docker.png"
          alt="Cover blog Docker and NGINX"
-         width="700">
+         width="100%">
 
     <p>
-        <img src="images/abdul.png"
+        <img src="images/profil.png"
              alt="Foto profil Vishnu Satheesh"
              width="32"
              height="32">
         &nbsp;
-        <strong>Vishnu Satheesh</strong>
+        <span><strong>Vishnu Satheesh</strong></span>
         &nbsp;
         <span>May 31</span>
     </p>
@@ -88,21 +90,27 @@ CMD ["npm", "start"]
 
     <h3>Top comments (0)</h3>
 
-    <table border="1">
-        <tr>
-            <td valign="top">
-                <img src="images/abdul.png"
-                     alt="Foto profil pengguna"
-                     width="32"
-                     height="32">
-            </td>
-            <td valign="top">
-                <textarea rows="3"
-                          cols="60"
-                          placeholder="Add to the discussion"
-                          aria-label="Komentar"></textarea>
-            </td>
-        </tr>
+    <table border="1" cellpadding="8" cellspacing="0" width="100%">
+        <tbody>
+            <tr>
+                <td valign="top" width="32">
+                    <img src="images/profil.png"
+                         alt="Foto profil pengguna"
+                         width="32"
+                         height="32">
+                </td>
+                <td valign="top">
+                    <form action="#" method="post">
+                        <label for="comment">Comment</label><br>
+                        <textarea id="comment"
+                                  name="comment"
+                                  rows="3"
+                                  cols="60"
+                                  placeholder="Add to the discussion"></textarea>
+                    </form>
+                </td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>

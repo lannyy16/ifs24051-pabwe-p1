@@ -1,87 +1,82 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="IMDb Top 3 Movies">
+    <meta name="author" content="ifs24051">
     <title>IMDb Top 3 Movies</title>
 </head>
 <body>
     <nav aria-label="Navigasi utama">
-        <a href="index.html">IMDb Top 3 Movies</a>&nbsp;|&nbsp;
-        <a href="blog.html">Dev Blogs</a>&nbsp;|&nbsp;
-        <a href="form.html">Form Pendaftaran Akun</a>&nbsp;|&nbsp;
+        <a href="index.html">IMDb Top 3 Movies</a> |
+        <a href="blog.html">Dev Blogs</a> |
+        <a href="form.html">Form Pendaftaran Akun</a> |
         <a href="cv.html">Curriculum Vitae</a>
     </nav>
 
     <hr>
+
     <h3>IMDB Chart</h3>
     <h1>IMDB Top 3 Movies</h1>
 
     <hr>
 
-    <table border="1" width="500" cellpadding="4">
-        <tr>
-            <td width="80" valign="top">
-                <img src="images/Shawshank.png"
-                     alt="Cover The Shawshank Redemption"
-                     width="72"
-                     height="107">
-            </td>
-            <td valign="top">
-                <h3>The Shawshank Redemption</h3>
-                <p>
-                    <span>1994</span>&nbsp;&nbsp;
-                    <span>2h 22m</span>&nbsp;&nbsp;
-                    <span>R</span>
-                </p>
-                <p>Rating: 9.3 (3.1M)</p>
-            </td>
-        </tr>
-    </table>
-
-    <br>
-
-    <table border="1" width="500" cellpadding="4">
-        <tr>
-            <td width="80" valign="top">
-                <img src="images/Godfather.png"
-                     alt="Cover The Godfather"
-                     width="72"
-                     height="107">
-            </td>
-            <td valign="top">
-                <h3>The Godfather</h3>
-                <p>
-                    <span>1972</span>&nbsp;&nbsp;
-                    <span>2h 55m</span>&nbsp;&nbsp;
-                    <span>R</span>
-                </p>
-                <p>Rating: 9.2 (2.1M)</p>
-            </td>
-        </tr>
-    </table>
-
-    <br>
-
-    <table border="1" width="500" cellpadding="4">
-        <tr>
-            <td width="80" valign="top">
-                <img src="images/DarkKnight.jpeg"
-                     alt="Cover The Dark Knight"
-                     width="72"
-                     height="107">
-            </td>
-            <td valign="top">
-                <h3>The Dark Knight</h3>
-                <p>
-                    <span>2008</span>&nbsp;&nbsp;
-                    <span>2h 32m</span>&nbsp;&nbsp;
-                    <span>PG-13</span>
-                </p>
-                <p>Rating: 9.1 (3.1M)</p>
-            </td>
-        </tr>
+    <!-- Three IMDb movies are displayed in one table with two columns. -->
+    <table border="1" cellpadding="8" cellspacing="0" width="100%">
+        <tbody>
+            <tr>
+                <td valign="top">
+                    <img src="images/Shawshank.png"
+                         alt="Cover The Shawshank Redemption"
+                         width="72"
+                         height="107">
+                </td>
+                <td valign="top">
+                    <h3>The Shawshank Redemption</h3>
+                    <p>
+                        <span>1994</span>&nbsp;&nbsp;
+                        <span>2h 22m</span>&nbsp;&nbsp;
+                        <span>R</span>
+                    </p>
+                    <p>Rating: 9.3 (3.1M)</p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <img src="images/Godfather.png"
+                         alt="Cover The Godfather"
+                         width="72"
+                         height="107">
+                </td>
+                <td valign="top">
+                    <h3>The Godfather</h3>
+                    <p>
+                        <span>1972</span>&nbsp;&nbsp;
+                        <span>2h 55m</span>&nbsp;&nbsp;
+                        <span>R</span>
+                    </p>
+                    <p>Rating: 9.2 (2.1M)</p>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <img src="images/DarkKnight.jpeg"
+                         alt="Cover The Dark Knight"
+                         width="72"
+                         height="107">
+                </td>
+                <td valign="top">
+                    <h3>The Dark Knight</h3>
+                    <p>
+                        <span>2008</span>&nbsp;&nbsp;
+                        <span>2h 32m</span>&nbsp;&nbsp;
+                        <span>12A</span>
+                    </p>
+                    <p>Rating: 9.1 (3.1M)</p>
+                </td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
