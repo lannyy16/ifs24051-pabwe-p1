@@ -19,7 +19,7 @@
     <hr>
 
     <main>
-        <h1>Daftar Akun</h1>
+        <h1>Form Pendaftaran Akun</h1>
 
         <form action="#" method="post">
             <fieldset>
@@ -30,14 +30,14 @@
                     <input type="text" id="nama" name="nama" required>
                 </p>
 
-                <p>
-                    <span>Jenis Kelamin:</span><br />
+                <fieldset>
+                    <legend>Jenis Kelamin</legend>
                     <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki" required>
                     <label for="laki-laki">Laki-laki</label>
 
                     <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
                     <label for="perempuan">Perempuan</label>
-                </p>
+                </fieldset>
 
                 <p>
                     <label for="tempat-lahir">Tempat Lahir:</label><br />
@@ -62,8 +62,8 @@
                     </select>
                 </p>
 
-                <p>
-                    <span>Hobi:</span><br />
+                <fieldset>
+                    <legend>Hobi</legend>
                     <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
                     <label for="membaca">Membaca</label>
 
@@ -75,7 +75,7 @@
 
                     <input type="checkbox" id="traveling" name="hobi[]" value="Traveling">
                     <label for="traveling">Traveling</label>
-                </p>
+                </fieldset>
 
                 <p>
                     <label for="password">Password:</label><br />
