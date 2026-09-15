@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Detail blog tentang deployment web application menggunakan Docker dan NGINX">
+    <meta name="description" content="Detail dev blogs tentang AI, Redis, Docker, dan NGINX">
     <meta name="author" content="ifs24051">
-    <title>Blog Detail - Docker and NGINX</title>
+    <title>Blog Detail - Dev Blogs</title>
 </head>
 <body>
     <nav aria-label="Navigasi utama">
@@ -19,94 +19,95 @@
     <hr>
 
     <main>
-        <!-- Ganti Docker.png dengan gambar cover milik kamu jika diperlukan. -->
-        <img src="images/Docker.png"
-             alt="Cover blog Docker dan NGINX"
-             width="100%">
+        <h1>Dev Blog Detail</h1>
 
-        <p>
-            <img src="images/profil.png"
-                 alt="Foto profil Vishnu Satheesh"
-                 width="32"
-                 height="32">
-            &nbsp;
-            <strong>Vishnu Satheesh</strong>
-            &nbsp;
-            <span>May 31</span>
-        </p>
-
-        <h1>How to Deploy a Web Application Using Docker and NGINX on Your Own Server</h1>
+        <article id="ltx-video">
+            <img src="images/profil.png" alt="Foto profil aimodels-fyi" width="32" height="32">
+            <p><strong>aimodels-fyi</strong><br />Jun 1</p>
+            <h2>A beginner's guide to the Ltx-Video-0.9.7 model by Lightricks on Replicate</h2>
+            <p>
+                Ltx-Video-0.9.7 adalah model video generatif yang dapat digunakan untuk membuat video dari prompt.
+                Replicate membantu pengguna mencoba model AI tanpa harus menyiapkan infrastruktur machine learning sendiri.
+            </p>
+            <h3>Getting Started</h3>
+            <p>
+                Mulai dengan memilih model, membaca input yang dibutuhkan, kemudian menjalankan model menggunakan prompt yang sesuai.
+            </p>
+            <h3>Conclusion</h3>
+            <p>
+                Model video generatif dapat membantu proses pembuatan konten menjadi lebih cepat dan mudah untuk dicoba.
+            </p>
+        </article>
 
         <hr>
 
-        <p>
-            Deploying a web application does not need to be a complicated process.
-            With Docker, NGINX, and your own server, you can get your application live
-            in no time.
-        </p>
+        <article id="redis-acl">
+            <img src="images/profil.png" alt="Foto profil Ali Nazari" width="32" height="32">
+            <p><strong>Ali Nazari</strong><br />May 31</p>
+            <h2>Securing Redis with ACLs and Integrating Redis Insight in Docker</h2>
+            <p>
+                Redis ACL digunakan untuk mengatur pengguna dan hak akses sehingga hanya operasi yang diizinkan dapat dijalankan.
+                Redis Insight dapat membantu memantau dan mengelola Redis yang berjalan di Docker.
+            </p>
+            <h3>Configure ACLs</h3>
+            <p>
+                Buat pengguna Redis dengan izin yang sesuai kebutuhan aplikasi dan gunakan autentikasi sebelum mengakses database.
+            </p>
+            <h3>Conclusion</h3>
+            <p>
+                Penggunaan ACL dan pengelolaan akses yang tepat membantu meningkatkan keamanan Redis dalam lingkungan container.
+            </p>
+        </article>
 
-        <p>
-            In this blog, I will show you how to serve your application with a domain,
-            route traffic with NGINX, and run it inside a Docker container.
-            This guide is intended for a Linux-based server.
-        </p>
+        <hr>
 
-        <h2>Step 1: Setup Docker</h2>
-
-        <p>
-            First, set up Docker. Create a Dockerfile in your project directory
-            to define how the application should be containerized.
-        </p>
-
-        <p>Dockerfile:</p>
-
-        <pre>FROM node:20-alpine
+        <article id="docker-nginx">
+            <img src="images/Docker.png" alt="Cover blog Docker dan NGINX" width="486" height="213">
+            <p>
+                <img src="images/profil.png" alt="Foto profil Vishnu Satheesh" width="32" height="32">
+                &nbsp;<strong>Vishnu Satheesh</strong>&nbsp;May 31
+            </p>
+            <h2>How to Deploy a Web Application Using Docker and NGINX on Your Own Server</h2>
+            <p>
+                Deploying a web application does not need to be a complicated process.
+                With Docker, NGINX, and your own server, you can get your application live in no time.
+            </p>
+            <p>
+                In this blog, I will show you how to serve your application with a domain, route traffic with NGINX,
+                and run it inside a Docker container. This guide is intended for a Linux-based server.
+            </p>
+            <h3>Step 1: Setup Docker</h3>
+            <p>
+                First, set up Docker. Create a Dockerfile in your project directory to define how the application should be containerized.
+            </p>
+            <pre>FROM node:20-alpine
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
 CMD ["npm", "start"]</pre>
-
-        <h2>Step 2: Build and Run the Docker Container</h2>
-
-        <p>
-            After creating the Dockerfile, build the Docker image and run the
-            container on your server to make sure the application works correctly.
-        </p>
-
-        <h2>Conclusion</h2>
-
-        <p>
-            Deploying a web application using Docker and NGINX on your own server
-            becomes easier when the process is divided into clear steps.
-        </p>
-
-        <p>
-            By containerizing the application and using NGINX as a reverse proxy,
-            you can manage the deployment process more easily.
-        </p>
+            <h3>Step 2: Build and Run the Docker Container</h3>
+            <p>
+                After creating the Dockerfile, build the Docker image and run the container on your server to make sure the application works correctly.
+            </p>
+            <h3>Conclusion</h3>
+            <p>
+                Deploying a web application using Docker and NGINX becomes easier when the process is divided into clear steps.
+            </p>
+        </article>
 
         <hr>
-
         <h2>Top comments (0)</h2>
-
         <table border="1" cellpadding="8" cellspacing="0" width="100%">
             <tbody>
                 <tr>
                     <td valign="top" width="32">
-                        <img src="images/profil.png"
-                             alt="Foto profil pengguna"
-                             width="32"
-                             height="32">
+                        <img src="images/profil.png" alt="Foto profil pengguna" width="32" height="32">
                     </td>
                     <td valign="top">
                         <form action="#" method="post">
                             <label for="comment">Comment</label><br />
-                            <textarea id="comment"
-                                      name="comment"
-                                      rows="3"
-                                      cols="60"
-                                      placeholder="Add to the discussion"></textarea>
+                            <textarea id="comment" name="comment" rows="3" cols="60" placeholder="Add to the discussion"></textarea>
                         </form>
                     </td>
                 </tr>
